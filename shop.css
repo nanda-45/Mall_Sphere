@@ -1,0 +1,196 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Container for the page content */
+.container {
+    margin-top: 30px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Filter section */
+.filter-select {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wrapper for Shop List and Offers Section */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    gap: 30px;
+}
+
+/* Shop List (left side) */
+#shop-list {
+    flex: 1;
+    display: flex;
+    gap: 20px; /* Space between the shop items */
+    padding-bottom: 20px; /* Add bottom padding to avoid cutting off content */
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.shop-item {
+    min-width: 250px; /* Minimum width of each shop item */
+    flex-shrink: 0; /* Prevent the items from shrinking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.shop-item:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up slightly */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card content styling */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger title font */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.shop-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.shop-item button:hover {
+    background-color: #0056b3; /* Darken the button color on hover */
+}
+
+/* Offers Section (right side) */
+#offers-section {
+    flex: 1;
+    display: none; /* Initially hidden, will be shown when a shop is clicked */
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.offers-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Offer card */
+.offer-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px); /* Lift the offer card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}
+
+.offer-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-price {
+    font-size: 1.3rem;
+    color: green;
+    font-weight: bold;
+}
+
+.previous-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Offer Logo Styling */
+.offer-logo {
+    width: 120px; /* Make the logo a bit larger */
+    height: 120px; /* Maintain a perfect circle */
+    object-fit: cover; /* Ensure the logo covers the area without stretching */
+    border-radius: 50%; /* Make the logo round */
+    margin: 0 auto; /* Center the logo within its container */
+    border: 4px solid #007bff; /* Add a subtle border for more prominence */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add a soft shadow for depth */
+}
+
+/* Optional: On hover, add a glowing effect */
+.offer-logo:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Glowing effect on hover */
+    border-color: #0056b3; /* Change border color when hovered */
+}
+
+/* Hide the shop list when offers are displayed */
+.show-offers #shop-list {
+    display: none;
+}
+
+/* Center the Back to Shop button */
+#offers-section .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+}
+
+#offers-section .btn:hover {
+    background-color: #218838; /* Darker green for back button */
+}
