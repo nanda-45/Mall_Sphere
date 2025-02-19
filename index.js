@@ -2,20 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Carousel Slides Text and Images
     const carouselSlides = [
         {
-            imgSrc: 'images/WhatsApp Image 2025-02-19 at 1.07.58 PM.jpeg', // Image 1
-            text: "AI-Powered Engagement – Smart notifications increase foot traffic."
+            imgSrc: 'images/image1.png', // Image 1
         },
         {
-            imgSrc: 'images/WhatsApp Image 2025-02-19 at 1.08.56 PM.jpeg', // Image 2
-            text: "Dynamic Promotions – Shops can launch flash deals instantly."
+            imgSrc: 'images/image2.png', // Image 2
         },
         {
-            imgSrc: 'images/WhatsApp Image 2025-02-19 at 1.07.59 PM.jpeg', // Image 3
-            text: "Footstep Tracking & Reward System\n Step-Based Rewards \n Milestone Achievements"
+            imgSrc: 'images/image3.png', // Image 3
         },
         {
-            imgSrc: 'images/WhatsApp Image 2025-02-19 at 1.07.59 PM (1).jpeg', // Image 4
-            text: "Integrated Loyalty & Payment System\n Loyalty Points \n Digital Loyalty Cards"
+            imgSrc: 'images/image4.png', // Image 4
         }
     ];
 
@@ -34,9 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             carouselItem.innerHTML = ` 
                 <img class="d-block w-100" src="${slide.imgSrc}" alt="Carousel Image ${index + 1}">
-                <div class="carousel-caption">
-                    <p>${slide.text}</p>
-                </div>
             `;
             carouselInner.appendChild(carouselItem);
 
@@ -78,8 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let filteredMalls = malls; // Start with the full list of malls
 
     // Function to display mall list
-                // Function to display mall list
-                function displayMalls() {
+    function displayMalls() {
         const mallList = document.getElementById('mall-list');
         mallList.innerHTML = ''; // Clear the previous list
         const visibleMalls = filteredMalls.slice(0, visibleMallsCount); // Show only the first few malls
