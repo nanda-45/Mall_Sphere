@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'Bawabat Al Sharq Mall', image: 'https://www.bawabatalsharqmall.ae/media/4m1paeuh/bawabat-alsharq-mall-logo.svg?anchor=center&mode=crop', id: 'bawabat_al_sharq', location: 'Abu Dhabi' },
         { name: 'GVK One Mall (Banjara Hills)', image: 'https://gvkone.com/wp-content/uploads/2021/08/GVK_Logo_Website.png', id: 'gvk_one_mall', location: 'Hyderabad' },
         { name: 'Inorbit Mall (Hitech City)', image: 'https://www.inorbit.in/hyderabad/wp-content/uploads/sites/6/2024/02/inorbit-logo-2_1-1-e1708419594884.png', id: 'inorbit_mall', location: 'Hyderabad' },
-        { name: 'Hyderabad Central Mall (Ameerpet)', image: 'https://www.urtrips.com/wp-content/uploads/2023/11/Hyderabad-Central-Mall-1.jpg', id: 'hyderabad_central_mall', location: 'Hyderabad' },
+        // { name: 'Hyderabad Central Mall (Ameerpet)', image: 'https://www.urtrips.com/wp-content/uploads/2023/11/Hyderabad-Central-Mall-1.jpg', id: 'hyderabad_central_mall', location: 'Hyderabad' },
         { name: 'Sarath City Capital Mall (Kukatpally)', image: 'https://sarathcitycapitalmall.com/wp-content/uploads/2020/04/sccm-logo-200x64-1.svg#6733', id: 'sarath_city_capital_mall', location: 'Hyderabad' },
         { name: 'LuLu Mall (Kukatpally)', image: 'https://www.hyderabad.lulumall.in/wp-content/uploads/2023/07/lulu-hyderabad-01-300x173.png', id: 'lulu_mall', location: 'Hyderabad' }
     ];
